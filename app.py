@@ -29,7 +29,7 @@ st.header("Step 2: Select Model")
 model_name = st.selectbox("Choose Model", [
     "logistic_regression", "random_forest", "svc", "voting_classifier"
 ])
-model = joblib.load(f"models/{model_name}.pkl")
+model = joblib.load(f"Models/{model_name}.pkl")
 
 # Predict and explain
 st.header("Step 3: Prediction and Explanation")
