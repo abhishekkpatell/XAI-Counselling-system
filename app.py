@@ -10,7 +10,7 @@ st.set_page_config(page_title="Admission Predictor with XAI", layout="centered")
 st.title("🎓 Admission Predictor with SHAP Explanation")
 
 # Load label encoders
-label_encoders = joblib.load("models/label_encoders.pkl")
+label_encoders = joblib.load("Models/label_encoders.pkl")
 categorical_columns = ['institute', 'academic_program_name', 'quota', 'seat_type', 'gender']
 
 # Collect user input
